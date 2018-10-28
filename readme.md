@@ -25,7 +25,6 @@ _Usage_
 ```jsx
 const Component = (props) => {
   useEscapeKey(() => console.log('I have pressed escape key'));
-  return ...
 }
 ```
 
