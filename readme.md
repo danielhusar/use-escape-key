@@ -29,7 +29,7 @@ const Component = (props) => {
 }
 ```
 
-The `useEscapeKey` also accepnt second argument for options:
+The `useEscapeKey` also accept second argument for options:
 ###### window
 
 Type: `object`
@@ -42,7 +42,7 @@ This is usefull if you dont want to bind escape event to current window, but for
 Type: `array`
 Default: `[]`
 
-If you perform a state manipulation inside of your callback, you should provide state variables so callback will get executed with latest values. This get passed as last argument into `useEffect` hook.
+If you use in your callback any values from the outer scope that change over time, you should provide them as dependeincies so callback will get executed with latest values. This get passed as [second argument](https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects) into `useEffect` hook.
 
 ## License
 
