@@ -4,6 +4,7 @@
   "description": "React hook for escape key press",
   "author": "danielhusar",
   "license": "MIT",
+  "private": false,
   "main": "src/index.js",
   "engines": {
     "node": ">=8",
