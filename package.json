@@ -1,0 +1,43 @@
+{
+  "name": "@danielhusar/use-escape-key",
+  "version": "1.0.0",
+  "description": "React hook for escape key press",
+  "author": "danielhusar",
+  "license": "MIT",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,json,md}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  },
+  "dependencies": {
+    "react": "^16.7.0-alpha.0"
+  },
+  "devDependencies": {
+    "husky": "^1.1.2",
+    "jest": "^23.6.0",
+    "lint-staged": "^7.3.0"
+  },
+  "files": [
+    "src/index.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/danielhusar/use-escape-key/issues"
+  },
+  "homepage": "https://github.com/danielhusar/use-escape-key#readme"
+}
