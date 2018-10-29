@@ -23,6 +23,7 @@ This is a hook that lets you execute callback when escape key is pressed.
 _Usage_
 
 ```jsx
+import useEscapeKey from '@daniel.husar/use-escape-key';
 const Component = (props) => {
   useEscapeKey(() => console.log('I have pressed escape key'));
 }

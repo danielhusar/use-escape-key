@@ -5,7 +5,7 @@ const _dependencies = [];
 const _window = window;
 
 const useEscapeKey = (callback, { dependencies = _dependencies, window = _window } = {}) => {
-  if (!window || !window.document || callback) {
+  if (!window || !window.document || !callback) {
     return;
   }
 
