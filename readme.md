@@ -11,7 +11,7 @@
 ### Install
 
 ```bash
-yarn add @danielhusar/use-escape-key
+yarn add @daniel.husar/use-escape-key
 ```
 
 ### API

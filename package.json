@@ -1,5 +1,5 @@
 {
-  "name": "@danielhusar/use-escape-key",
+  "name": "@daniel.husar/use-escape-key",
   "version": "1.0.0",
   "description": "React hook for escape key press",
   "author": "danielhusar",
@@ -40,5 +40,14 @@
   "bugs": {
     "url": "https://github.com/danielhusar/use-escape-key/issues"
   },
-  "homepage": "https://github.com/danielhusar/use-escape-key#readme"
+  "homepage": "https://github.com/danielhusar/use-escape-key#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielhusar/use-escape-key.git"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "escape"
+  ]
 }
