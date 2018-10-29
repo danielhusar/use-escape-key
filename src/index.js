@@ -5,11 +5,11 @@ const _dependencies = [];
 const _window = window;
 
 const useEscapeKey = (callback, { dependencies = _dependencies, window = _window } = {}) => {
-  if (!window || !window.document || !callback) {
-    return;
-  }
-
   useEffect(() => {
+    if (!window || !window.document || !callback) {
+      return;
+    }
+
     const onKeyPress = event => event.keyCode === ESCAPE_KEY && callback(event);
 
     window.document.addEventListener('keydown', onKeyPress);
