@@ -6,7 +6,7 @@
 
 ### About
 
-`@danielhusar/use-escape-key` is a [react custom-hook](https://reactjs.org/docs/hooks-custom.html) that will listen to key press during the mount of your component, and will unbind the listener when component will be unmounted
+`@danielhusar/use-escape-key` is a [react custom-hook](https://reactjs.org/docs/hooks-custom.html) that will execute function when escape key is pressed
 
 ### Install
 
@@ -18,24 +18,27 @@ yarn add @daniel.husar/use-escape-key
 
 #### useEscapeKey
 
-This is a hook that lets you execute callback when escape key is pressed.
+This is a hook that lets you execute function when escape key is pressed.
 
 _Usage_
 
 ```jsx
 import useEscapeKey from '@daniel.husar/use-escape-key';
 const Component = (props) => {
-  useEscapeKey(() => console.log('I have pressed escape key'));
+  useEscapeKey(() => console.log('I have pressed escape key!'));
 }
 ```
 
-The `useEscapeKey` also accept second argument for options:
+First argument in `useEscapeKey` is function that will be executed when escape key is pressed. The event object is passed into this function as argument.
+
+Second optional argument is object for options:
+
 ###### window
 
 Type: `object`
 Default: `'window object'`
 
-This is usefull if you dont want to bind escape event to current window, but for example to parent window (window.parent)
+This is useful if you don't want to bind event to current window, but for example to parent window (window.parent)
 
 ###### dependencies
 
