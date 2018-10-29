@@ -1,6 +1,6 @@
 {
   "name": "@daniel.husar/use-escape-key",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook for escape key press",
   "author": "danielhusar",
   "license": "MIT",
