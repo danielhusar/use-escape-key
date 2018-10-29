@@ -45,7 +45,7 @@ This is useful if you don't want to bind event to current window, but for exampl
 Type: `array`
 Default: `[]`
 
-If you use in your callback any values from the outer scope that change over time, you should provide them as dependeincies so callback will get executed with latest values. This get passed as [second argument](https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects) into `useEffect` hook.
+If you use in your function any values from the outer scope that change over time, you should provide them as dependencies so function will get executed with latest values. This get passed as [second argument](https://reactjs.org/docs/hooks-effect.html#tip-optimizing-performance-by-skipping-effects) into `useEffect` hook.
 
 ## License
 

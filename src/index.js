@@ -10,8 +10,12 @@ const useEscapeKey = (callback, { dependencies = _dependencies, window = _window
       return;
     }
 
-    const onKeyPress = event => event.keyCode === ESCAPE_KEY && callback(event);
+    if (!Array.isArray(dependencies)) {
+      dependencies = _dependencies;
+      console.warn('Dependencies must be an array!');
+    }
 
+    const onKeyPress = event => event.keyCode === ESCAPE_KEY && callback(event);
     window.document.addEventListener('keydown', onKeyPress);
     return () => {
       window.document.removeEventListener('keydown', onKeyPress);
